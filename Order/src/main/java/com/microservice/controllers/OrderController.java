@@ -30,8 +30,6 @@ public class OrderController {
 	@PostMapping("/order/add")
 	public TransactionResponse doOrder(@RequestBody TransactionRequest request) {
 		TransactionResponse transactionResponse = service.doOrder(request);
-		
-		
 		return transactionResponse;
 	}
 
