@@ -49,12 +49,5 @@ public class Payment {
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
-//	@Override
-//	public String toString() {
-//		return "Payment [payment_id=" + payment_id + ", paymentStatus=" + paymentStatus + ", transactionId="
-//				+ transactionId + ", orderId=" + orderId + ", amount=" + amount + "]";
-//	}
-//	
-//	
 	
 }
