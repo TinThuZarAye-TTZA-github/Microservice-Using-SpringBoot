@@ -1,0 +1,31 @@
+package com.microservice.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.microservice.entities.Order;
+import com.microservice.repositories.OrderRepository;
+
+@Service
+public class OrderServiceImpl implements OrderService {
+
+	@Autowired
+	OrderRepository repo;
+	
+	
+	@Override
+	public Order doOrder(Order newOrder) {
+		Order order = repo.save(newOrder);
+		return order;
+	}
+
+
+	@Override
+	public List<Order> getAllOrder() {
+		List<Order> order_list = repo.findAll();
+		return order_list;
+	}
+
+}

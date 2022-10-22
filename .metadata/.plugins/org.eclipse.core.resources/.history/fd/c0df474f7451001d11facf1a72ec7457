@@ -1,0 +1,28 @@
+package com.microservice.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "Order")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Order {
+	
+	@Id
+	@GeneratedValue
+	int order_id;
+	String name;
+	int quantity;
+	int price;
+	
+	
+
+}

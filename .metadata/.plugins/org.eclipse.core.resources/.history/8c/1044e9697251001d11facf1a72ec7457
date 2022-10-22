@@ -1,0 +1,7 @@
+package com.microservice.services;
+
+public interface OrderService {
+	
+	public Order doOrder(Order newOrder);
+
+}

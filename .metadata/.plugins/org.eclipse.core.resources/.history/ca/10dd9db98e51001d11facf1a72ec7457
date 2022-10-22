@@ -1,0 +1,8 @@
+package com.microservice.common;
+
+import com.microservice.entities.Order;
+
+public class TransactionRequest {
+	private Order order;
+	private Payment payment;
+}

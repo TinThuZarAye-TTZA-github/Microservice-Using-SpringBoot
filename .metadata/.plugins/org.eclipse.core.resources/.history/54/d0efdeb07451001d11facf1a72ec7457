@@ -1,0 +1,23 @@
+package com.microservice.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.microservice.entities.Order;
+import com.microservice.services.OrderService;
+
+@RestController
+public class OrderController {
+	
+	@Autowired
+	OrderService service;
+	
+	@PostMapping("/order")
+	public Order doOrder(@RequestBody Order newOrder) {
+		Order order = service.doOrder(newOrder);
+		return order;
+	}
+
+}

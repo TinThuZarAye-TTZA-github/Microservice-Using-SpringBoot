@@ -1,0 +1,32 @@
+package com.microservice.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.microservice.entities.Order;
+import com.microservice.services.OrderService;
+
+@RestController
+public class OrderController {
+	
+	@Autowired
+	OrderService service;
+	
+	@GetMapping("/order")
+	public List<Order> getAllOrder() {
+		List<Order> order_list = service.getAllOrder();
+		return order_list;
+	}
+	
+	@PostMapping("/order")
+	public Order doOrder(@RequestBody Order newOrder) {
+		Order order = service.doOrder(newOrder);
+		return order;
+	}
+
+}

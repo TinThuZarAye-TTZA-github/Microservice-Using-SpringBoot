@@ -1,0 +1,10 @@
+package com.microservice.common;
+
+import com.microservice.entities.Order;
+
+public class TransactionResponse {
+
+	private Order order;
+	private int amount;
+	private String transactionId;
+}

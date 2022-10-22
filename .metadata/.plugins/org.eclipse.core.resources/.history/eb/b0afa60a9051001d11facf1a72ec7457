@@ -1,0 +1,13 @@
+package com.microservice.services;
+
+import java.util.List;
+
+import com.microservice.entities.Order;
+
+public interface OrderService {
+	
+	public Order doOrder(Order newOrder);
+	public List<Order> getAllOrder();
+	
+
+}
