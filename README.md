@@ -1,10 +1,10 @@
 Order 
 -----
-Dependency - Lombok, Spring Web, Spring Data JPA, H2 Database, MySQL  
+Dependency - Spring Web, Spring Data JPA, H2 Database, MySQL, Lombok    
 port: localhost:8080
 
 Payment
 --------
-Dependency - Lombok, Spring Web, Spring Data JPA, H2 Database, MySQL  
+Dependency - Spring Web, Spring Data JPA, H2 Database, MySQL, Lombok    
 port: localhost:8081
 
