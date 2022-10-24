@@ -1,11 +1,11 @@
 Order 
 -----
-Dependency - Spring Web, Spring Data JPA, H2 Database, MySQL, Lombok, Eurka Discovery Client    
+Dependency - Spring Web, Spring Data JPA, H2 Database, MySQL, Lombok, Eureka Discovery Client  
 port: localhost:8080
 
 Payment
 --------
-Dependency - Spring Web, Spring Data JPA, H2 Database, MySQL, Lombok, Eurka Discovery Client      
+Dependency - Spring Web, Spring Data JPA, H2 Database, MySQL, Lombok, Eureka Discovery Client        
 port: localhost:8081
 
 Eurka Registry
