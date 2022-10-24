@@ -38,7 +38,7 @@ public class OrderServiceImpl implements OrderService {
 		//REST API call
 		//url from payment controller
 		Payment paymentResponse = template
-								.postForObject("http://localhost:8081/payment/add", payment, Payment.class);
+								.postForObject("http://PAYMENT-SERVICE/payment/add", payment, Payment.class);
 		
 		
 		if(paymentResponse.getPaymentStatus().equals("success")) {
