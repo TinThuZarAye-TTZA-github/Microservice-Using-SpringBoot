@@ -10,6 +10,6 @@ port: localhost:8081
 
 Eurka Registry
 ---------------
-Dependency - Eurka Server
+Dependency - Eurka Server  
 prot: localhost: 8761
 
