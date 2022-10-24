@@ -10,5 +10,6 @@ public interface PaymentService {
 	public List<Payment> getAllPayment();
 	
 	public String paymentProcessing();
+	public Payment findByOrderId(int orderId);
 
 }

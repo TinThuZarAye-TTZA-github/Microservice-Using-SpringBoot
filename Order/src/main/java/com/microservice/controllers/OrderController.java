@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,18 +17,19 @@ import com.microservice.entities.Order;
 import com.microservice.services.OrderService;
 
 @RestController
+@RequestMapping("/order")
 public class OrderController {
 	
 	@Autowired
 	OrderService service;
 	
-	@GetMapping("/order")
+	@GetMapping("/")
 	public List<Order> getAllOrder() {
 //		List<Order> order_list = service.getAllOrder();
 		return service.getAllOrder();
 	}
 	
-	@PostMapping("/order/add")
+	@PostMapping("/add")
 	public TransactionResponse doOrder(@RequestBody TransactionRequest request) {
 		TransactionResponse transactionResponse = service.doOrder(request);
 		return transactionResponse;

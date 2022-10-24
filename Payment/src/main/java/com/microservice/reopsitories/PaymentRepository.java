@@ -7,5 +7,7 @@ import com.microservice.entities.Payment;
 
 @Repository
 public interface PaymentRepository extends JpaRepository<Payment,Integer>{
+	
+	public Payment findByOrderId(int orderId);
 
 }

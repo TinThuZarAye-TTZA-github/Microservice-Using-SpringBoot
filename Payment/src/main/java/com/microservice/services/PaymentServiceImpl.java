@@ -39,6 +39,12 @@ public class PaymentServiceImpl implements PaymentService{
 		return new Random().nextBoolean()?"success":"false";
 	}
 
+	@Override
+	public Payment findByOrderId(int orderId) {
+		Payment p = repo.findByOrderId(orderId);
+		return p;
+	}
+
 	
 	
 	
