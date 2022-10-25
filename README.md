@@ -8,7 +8,7 @@ Payment
 Dependency - Spring Web, Spring Data JPA, H2 Database, MySQL, Lombok, Eureka Discovery Client        
 port: localhost:8081
 
-Eurka Registry
+Eureka Registry
 ---------------
 Dependency - Eurka Server  
 prot: localhost: 8761
