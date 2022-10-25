@@ -3,6 +3,9 @@ package com.microservice.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import com.microservice.common.Payment;
@@ -12,14 +15,16 @@ import com.microservice.entities.Order;
 import com.microservice.repositories.OrderRepository;
 
 @Service
+@RefreshScope
 public class OrderServiceImpl implements OrderService {
 
 	@Autowired
 	OrderRepository repo;
 	
 	@Autowired
+	@Lazy
 	RestTemplate template;
-
+	
 
 	@Override
 	public List<Order> getAllOrder() {
