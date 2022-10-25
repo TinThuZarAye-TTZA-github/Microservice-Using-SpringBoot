@@ -22,6 +22,6 @@ Note
 -----
 Add -- to every microservice to talk to cloud config
 <dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
+<groupId>org.springframework.cloud</groupId>
+<artifactId>spring-cloud-starter-config</artifactId>
 </dependency>
