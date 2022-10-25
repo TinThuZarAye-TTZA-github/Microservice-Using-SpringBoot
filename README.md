@@ -25,6 +25,17 @@ post: http://localhost:8989/payment/add
 get: http://localhost:8989/payment  
 get: http://localhost:8989/payment/{orderId}  
 
+Sample:  
+{
+    "order":{
+        "order_id": 1,
+        "name" : "Order1",
+        "price" : 150,
+        "quantity": 2
+    },
+    "payment": {}
+}
+
 
 
 
