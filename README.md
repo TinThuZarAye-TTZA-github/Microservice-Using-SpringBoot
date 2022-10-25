@@ -15,6 +15,6 @@ prot: localhost: 8761
 
 Cloud Gateway API
 -----------------
-Dependency - Gateway, Eureka Discovery Client, Sprint Boot Actuator, Spring cloud stater Netflix Hystrix
+Dependency - Gateway, Eureka Discovery Client, Sprint Boot Actuator, Spring cloud stater Netflix Hystrix  
 prot: 8989
 
