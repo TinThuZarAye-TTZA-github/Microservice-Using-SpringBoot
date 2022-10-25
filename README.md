@@ -18,8 +18,6 @@ Cloud Gateway API
 Dependency - Gateway, Eureka Discovery Client, Sprint Boot Actuator, Spring cloud stater Netflix Hystrix  
 prot: 8989  
 
-----------------
-
 Postman  
 post: http://localhost:8989/order/add  
 get: http://localhost:8989/order  
@@ -28,15 +26,15 @@ get: http://localhost:8989/payment
 get: http://localhost:8989/payment/{orderId}  
 
 Sample:  
-{
-    "order":{
-        "order_id": 1,
-        "name" : "Order1",
-        "price" : 150,
-        "quantity": 2
-    },
-    "payment": {}
-}
+{  
+    "order":{  
+        "order_id": 1,  
+        "name" : "Order1",  
+        "price" : 150,  
+        "quantity": 2  
+    },  
+    "payment": {}  
+}  
 
 
 
