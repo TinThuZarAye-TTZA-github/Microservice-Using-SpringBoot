@@ -1,3 +1,8 @@
+Eureka Registry
+---------------
+Dependency - Eurka Server  
+prot: localhost: 8761  
+
 Order 
 -----
 Dependency - Spring Web, Spring Data JPA, H2 Database, MySQL, Lombok, Eureka Discovery Client  
@@ -6,14 +11,21 @@ port: localhost:8080
 Payment
 --------
 Dependency - Spring Web, Spring Data JPA, H2 Database, MySQL, Lombok, Eureka Discovery Client        
-port: localhost:8081
+port: localhost:8081  
 
-Eureka Registry
----------------
-Dependency - Eurka Server  
-prot: localhost: 8761
-
-Cloud Gateway API
+Cloud Gateway API 
 -----------------
 Dependency - Gateway, Eureka Discovery Client, Sprint Boot Actuator, Spring cloud stater Netflix Hystrix  
 prot: 8989  
+
+Postman  
+post: http://localhost:8989/order/add  
+get: http://localhost:8989/order  
+post: http://localhost:8989/payment/add  
+get: http://localhost:8989/payment  
+get: http://localhost:8989/payment/{orderId}  
+
+
+
+
+
