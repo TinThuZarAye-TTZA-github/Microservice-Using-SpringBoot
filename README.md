@@ -17,7 +17,3 @@ Cloud Gateway API
 -----------------
 Dependency - Gateway, Eureka Discovery Client, Sprint Boot Actuator, Spring cloud stater Netflix Hystrix  
 prot: 8989  
-
--------------
-Add "spring-cloud-stater-config" dependency to every microservice to talk to cloud config  
-
