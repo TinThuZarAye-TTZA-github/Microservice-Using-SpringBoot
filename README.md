@@ -18,3 +18,9 @@ Cloud Gateway API
 Dependency - Gateway, Eureka Discovery Client, Sprint Boot Actuator, Spring cloud stater Netflix Hystrix  
 prot: 8989
 
+
+Add -- to every microservice to talk to cloud config
+<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+</dependency>
